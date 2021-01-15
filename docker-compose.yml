@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  grpc-protoc:
+    container_name: grpcProtoc
+    build:
+      context: .
+      dockerfile: grpc.dockerfile
+    volumes: 
+      - ./service/:/service
